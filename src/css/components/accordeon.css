@@ -1,3 +1,33 @@
 /**
 * Accordeon
 */
+details {
+    width: 100px;
+    height: 48px;
+    overflow: hidden;
+    transition: height 2s ease-in-out, width 2s;
+    display: flex;
+    padding-left: 20px;
+    position: relative;
+}
+
+details::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    top: 0;
+    left: 0;
+    transition: transform 1s;
+}
+
+details[open] {
+    height: auto;
+    width: calc(100px + 20rem);
+}
+
+details[open]::before {
+    content: "";
+} 
+
+
