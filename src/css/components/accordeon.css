@@ -1,6 +1,10 @@
 /**
 * Accordeon
 */
+.accordeon {
+    display: flex;
+}
+
 details {
     width: 100px;
     height: 48px;
