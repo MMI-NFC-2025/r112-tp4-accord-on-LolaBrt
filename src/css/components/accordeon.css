@@ -34,4 +34,12 @@ details[open]::before {
     content: "";
 } 
 
+.accordeon>details>summary {
+    list-style: none;
+}
+
+.accordeon>details>summary::marker,
+.accordeon>details>summary::-webkit-details-marker {
+    display: none;
+}
 
